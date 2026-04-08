@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groep A</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    .page-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 30px 20px 60px 20px;
+      box-sizing: border-box;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 3rem;
+      margin: 0 0 30px 0;
+    }
+
+    .intro-card {
+      background: white;
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      margin-bottom: 35px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .intro-card h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    .team-list {
+      margin: 0;
+      padding-left: 22px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .intro-text p {
+      margin-top: 0;
+      margin-bottom: 14px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .sites-title {
+      font-size: 2rem;
+      margin: 50px 0 20px 0;
+      text-align: center;
+    }
+
+    .site-block {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 28px;
+      align-items: center;
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      margin-bottom: 28px;
+    }
+
+    .site-block.reverse {
+      grid-template-columns: 1fr 1.2fr;
+    }
+
+    .site-image-wrap {
+      height: 100%;
+      min-height: 320px;
+    }
+
+    .site-image {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .site-text {
+      padding: 28px;
+      box-sizing: border-box;
+    }
+
+    .site-text h3 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.7rem;
+    }
+
+    .site-text p {
+      margin: 0 0 18px 0;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .viewer-link {
+      display: inline-block;
+      text-decoration: none;
+      background: rgb(159, 51, 54);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .viewer-link:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+      color: white;
+    }
+
+    @media (max-width: 900px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .site-block,
+      .site-block.reverse {
+        grid-template-columns: 1fr;
+      }
+
+      .site-image-wrap,
+      .site-image {
+        min-height: 240px;
+      }
+
+      .page-title {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-container">
+    <h1 class="page-title">Groep A</h1>
+
+    <section class="intro-card">
+      <div class="intro-grid">
+        <div>
+          <h2>Teamleden</h2>
+          <ul class="team-list">
+            <li>Médaar Holvoet</li>
+            <li>Jore Deweerdt</li>
+            <li>Noah Jacobs</li>
+            <li>Tom Van Geluwe</li>
+          </ul>
+        </div>
+
+        <div class="intro-text">
+          <h2>Onze werkwijze</h2>
+          <p>
+            In deze pagina kan je mooi alle sites bekijken die opgemeten geweest zijn door groep A, dit hebben wij gedaan op basis van fotogrametrie en laserscanning. De 3D-modellen zijn telkens gemaakt puur op basis van fotogrammetrie (op uitzondering van D3 - Grot) terwijl we wel beide methodes combineren voor het maken van de puntenwolken.
+          </p>
+          <p>
+            Voor werkwijze hebben we gekozen elke dag onderling van rol te veranderen, zo leerden we alle vier het best en snelst bij en bleven we meer oplettend met onze werkzijze omdat het minder repetitief werken was.
+          </p>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="sites-title">Overzicht van de bezochte sites</h2>
+
+    <section class="site-block">
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D1_KERKJE.jpeg" alt="Groep A - D1 Kerkje" class="site-image">
+      </div>
+      <div class="site-text">
+        <h3>D1 – Kerkje</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D1_KERKJE.html">Open viewer</a>
+      </div>
+    </section>
+
+    <section class="site-block reverse">
+      <div class="site-text">
+        <h3>D2 – Franchthi Cave</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D2_GROT.html">Open viewer</a>
+      </div>
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D2_GROT.JPG" alt="Groep A - D2 Grot" class="site-image">
+      </div>
+    </section>
+
+    <section class="site-block">
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D3_MYKEENSE_STENEN.JPG" alt="Groep A - D3 Mykeense stenen" class="site-image">
+      </div>
+      <div class="site-text">
+        <h3>D3 – Mykeense stenen</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D3_MYKEENSE_STENEN.html">Open viewer</a>
+      </div>
+    </section>
+
+    <section class="site-block reverse">
+      <div class="site-text">
+        <h3>D3 – Samen wachten op de bus</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D3_TUNNELTJE.html">Open viewer</a>
+      </div>
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D3_SAMEN_WACHTEN.JPG" alt="Groep A - D3 Samen wachten" class="site-image">
+      </div>
+    </section>
+
+    <section class="site-block">
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D3_STATION.JPG" alt="Groep A - D3 Station" class="site-image">
+      </div>
+      <div class="site-text">
+        <h3>D3 – Station</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D3_STATION.html">Open viewer</a>
+      </div>
+    </section>
+
+    <section class="site-block reverse">
+      <div class="site-text">
+        <h3>D4 – Berg</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D4_BERG.html">Open viewer</a>
+      </div>
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D4_BERG.JPG" alt="Groep A - D4 Berg" class="site-image">
+      </div>
+    </section>
+
+    <section class="site-block">
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D5_BASIN.JPG" alt="Groep A - D5 Basin" class="site-image">
+      </div>
+      <div class="site-text">
+        <h3>D5 – Basin</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D5_BASIN.html">Open viewer</a>
+      </div>
+    </section>
+
+    <section class="site-block reverse">
+      <div class="site-text">
+        <h3>D5 – Kasteel</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D5_KASTEEL.html">Open viewer</a>
+      </div>
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D5_KASTEEL.JPG" alt="Groep A - D5 Kasteel" class="site-image">
+      </div>
+    </section>
+
+    <section class="site-block">
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D5_TORENTJE.JPG" alt="Groep A - D5 Torentje" class="site-image">
+      </div>
+      <div class="site-text">
+        <h3>D5 – Torentje</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D5_TORENTJE.html">Open viewer</a>
+      </div>
+    </section>
+
+    <section class="site-block reverse">
+      <div class="site-text">
+        <h3>D6 – Tombes</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D6_TOMBES.html">Open viewer</a>
+      </div>
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D6_TOMBES.JPG" alt="Groep A - D6 Tombes" class="site-image">
+      </div>
+    </section>
+
+    <section class="site-block">
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D7_NAFPLIO.jpg" alt="Groep A - D7 Nafplio" class="site-image">
+      </div>
+      <div class="site-text">
+        <h3>D7 – Nafplio</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D7_NAFPLIO.html">Open viewer</a>
+      </div>
+    </section>
+
+    <section class="site-block reverse">
+      <div class="site-text">
+        <h3>D7 – Route naar kapel</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D7_ROUTE_NAAR_KAPEL.html">Open viewer</a>
+      </div>
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D7_ROUTE_NAAR_KAPEL.JPG" alt="Groep A - D7 Route naar kapel" class="site-image">
+      </div>
+    </section>
+
+    <section class="site-block">
+      <div class="site-image-wrap">
+        <img src="./fotos_groep_A/GROEP_A_D8_SPOORBRUG.JPG" alt="Groep A - D8 Spoorbrug" class="site-image">
+      </div>
+      <div class="site-text">
+        <h3>D8 – Spoorbrug</h3>
+        <p>
+          beschrijving
+        </p>
+        <a class="viewer-link" href="GROEP_A_D8_SPOORBRUG.html">Open viewer</a>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>
