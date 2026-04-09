@@ -35,6 +35,28 @@
             }
             </style>
 
+            <style>
+                /* Zorg dat de kaart onder het menu blijft */
+                .folium-map,
+                #map_f224b4e4e41b79784910c428ac22a97c,
+                .leaflet-container {
+                    z-index: 1;
+                }
+
+                /* Zorg dat het dropdownmenu altijd klikbaar boven de kaart staat */
+                .dropdown,
+                .dropdown-menu,
+                #menu-container,
+                .menu-container,
+                .custom-menu {
+                    position: fixed !important;
+                    top: 15px;
+                    right: 15px;
+                    z-index: 99999 !important;
+                    pointer-events: auto !important;
+                }
+                </style>
+
             <style>#map {
                 position:absolute;
                 top:0;
@@ -54,12 +76,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
 </head>
+    
 <body>
     
-    
+            
             <div class="folium-map" id="map_f224b4e4e41b79784910c428ac22a97c" ></div>
-        
+   
 </body>
+   
 <script>
     
     
@@ -1791,4 +1815,5 @@
             marker_cluster_be435eecd03e469665038270daf9c79b.addTo(map_f224b4e4e41b79784910c428ac22a97c);
         
 </script>
+    
 </html>

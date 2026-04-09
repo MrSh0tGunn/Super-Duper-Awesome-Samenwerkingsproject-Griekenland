@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
         ☰
       </button>
       <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="index.html">Overzicht</a></li>
         <li><a class="dropdown-item" href="kaart.html">Kaart</a></li>
         <li><a class="dropdown-item" href="groepen.html">Groepen</a></li>
-        <li><a class="dropdown-item" href="index.html">Logboek</a></li>
+        <li><a class="dropdown-item" href="logboek.html">Logboek</a></li>
       </ul>
     </div>
   `;
