@@ -3,27 +3,162 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
-  <title>Groep A: Grot</title>
+  <title>Groep A: Franchthi Cave foto's + scans</title>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
-<body>
-  
-  <h1>Groep A: Grot</h1>
 
-  <model-viewer
-    src="./models/GROEP_A_D2_GROT_FOTO+SCAN.glb"
-    camera-controls
-    ar
-    ar-modes="scene-viewer webxr quick-look"
-    orientation = "0deg 0deg 0deg"
-    min-camera-orbit = "auto auto 0.2m"
-    style="width:100%; height:600px; background:rgb(159,51,54);">
+<body style="margin:0; font-family:Arial, sans-serif;">
 
-    <button slot="ar-button" id="ar-button">
-    View in AR / VR
-    </button>
-  </model-viewer>
+  <!-- HEADER -->
+  <div style="padding:20px 20px 10px 20px;">
+    <h1 style="margin:0;">Groep A: Franchthi Cave foto's + scans</h1>
+  </div>
+
+  <!-- VIEWER -->
+  <div style="padding:0 20px;">
+    <model-viewer
+      src="./models/GROEP_A_D2_GROT_FOTO+SCAN.glb"
+      camera-controls
+      ar
+      ar-modes="scene-viewer webxr quick-look"
+      orientation="0deg 0deg 70deg"
+      min-camera-orbit="auto auto 0.2m"
+      style="width:100%; height:600px; background:rgb(159,51,54); border-radius:10px;">
+      
+      <button slot="ar-button" id="ar-button">
+        View in AR / VR
+      </button>
+
+    </model-viewer>
+  </div>
+
+  <!-- ONDERBALK -->
+  <div style="
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    margin-top:10px;
+    gap:20px;
+    flex-wrap:wrap;
+  ">
+    
+    <div style="font-size:14px; color:#555;">
+      Tip: Houd <b>ALT</b> ingedrukt om trager te zoomen met scroll
+    </div>
+
+    <a href="./models/GROEP_A_D2_GROT_FOTO+SCAN.glb" download>
+      <button style="
+        padding:10px 15px;
+        background:#333;
+        color:white;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;">
+        Download 3D model (.glb)
+      </button>
+    </a>
+
+  </div>
+
+  <!-- INFOSECTIE -->
+  <div style="
+    display:flex;
+    gap:20px;
+    padding:0 20px 30px 20px;
+    align-items:flex-start;
+    flex-wrap:wrap;
+  ">
+
+    <!-- LINKER KOLOM -->
+    <div style="
+      flex:2;
+      min-width:300px;
+      background:#f5f5f5;
+      padding:20px;
+      border-radius:10px;
+      box-sizing:border-box;
+    ">
+      <h2 style="margin-top:0;">Context</h2>
+
+      <p style="text-align: justify;">
+        Drones kunnen geen foto's nemen boven hunzelf, dit betekent dat we met enkel foto's het plafond van de grot niet in dit model konden verwerken. Natuurlijk is dit wel heel interessante informatie.
+      </p>
+
+      <p style="text-align: justify;">
+        Als experiment hebben we dus een mesh gemaakt met beide fotogrammetrie EN laserscanning samen. Dit is een process dat niet lukt in Agisoft dat we normalieter gebruiken omdat dit programma foto's nodig heeft om de mesh te maken. Hiervoor maakten we dan gebruik van CloudCompare. Dit programma kan echter geen glb bestanden exporteren (wel lts of ply) dus hebben we dit model ook nog eens moeten omvormen van file type in Blender 5.1
+      </p>
+
+      <p style="text-align: justify;">
+        Het resultaat dat we bekomen zijn is compleet en heeft een plafond in de grot, maar is wel ten koste gekomen van de resolutie die nu heel wat lager ligt. Ook is het opmerkelijk dat het model enkele 'blobs' bevat, dit is het resultaat van CloudCompare dat lege/schaarse delen van de puntenwolk wou opvullen.
+      </p>
+
+    </div>
+
+    <!-- RECHTER KOLOM -->
+    <div style="
+      flex:1;
+      min-width:250px;
+      background:#f5f5f5;
+      padding:20px;
+      border-radius:10px;
+      box-sizing:border-box;
+    ">
+<div style="font-size:15px; line-height:1.5;">
+  <h2 style="margin-top:0; margin-bottom:18px;">Technische gegevens</h2>
+
+  <div style="margin-bottom:18px;">
+    <div style="font-size:17px; font-weight:700; color:rgb(159,51,54); margin-bottom:8px;">Algemeen</div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>Datum</span><span>23/03/2026</span>
+    </div>
+  </div>
+
+  <div style="margin-bottom:18px;">
+    <div style="font-size:17px; font-weight:700; color:rgb(159,51,54); margin-bottom:8px;">LAS-bestand</div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>Gedecimeerd op 1 cm</span><span>3,92 GB</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>Subsampled Omgeving (5 cm)</span><span>2,6 GB</span>
+    </div>
+  </div>
+
+  <div style="margin-bottom:18px;">
+    <div style="font-size:17px; font-weight:700; color:rgb(159,51,54); margin-bottom:8px;">Fotogrammetrie</div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>Aantal foto's</span><span>445</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>Aantal faces</span><span>1,1M</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>GSD</span><span>4,8 mm/pix</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>Camera</span><span>DJI Air 2S</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>Resolutie</span><span>5472 × 3648</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ddd; padding:4px 0;">
+      <span>Bestandsgrootte</span><span>79,4 MB</span>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-size:17px; font-weight:700; color:rgb(159,51,54); margin-bottom:8px;">Software</div>
+    <div>Agisoft Metashape</div>
+    <div>Cyclone Register</div>
+    <div>CloudCompare</div>
+    <div>Blender 5.1</div>
+  </div>
+</div>
+
+  </div>
+
   <script src="script.js"></script>
   <script src="menu.js"></script>
+
 </body>
 </html>
