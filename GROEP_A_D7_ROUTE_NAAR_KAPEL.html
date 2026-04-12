@@ -70,30 +70,84 @@
     flex-wrap:wrap;
   ">
 
-    <!-- LINKER KOLOM -->
-    <div style="
-      flex:2;
-      min-width:300px;
-      background:#f5f5f5;
-      padding:20px;
-      border-radius:10px;
-      box-sizing:border-box;
-    ">
-      <h2 style="margin-top:0;">Beschrijving van de site</h2>
+<!-- LINKER KOLOM -->
+<div style="
+  flex:2;
+  min-width:300px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+">
 
-      <p style="text-align: justify;">
-        Deze site toont de toegangsroute naar een kleine kapel, gelegen op een rotsachtige uitloper langs de kust nabij Asini. De route bestaat uit een smal pad en een reeks trappen die zich aanpassen aan het natuurlijke reliëf van het terrein. Door de ligging op een steile helling vormt de route een duidelijke verbinding tussen het hoger gelegen landschap en de kapel aan zee.
-      </p>
+  <!-- BESCHRIJVING -->
+  <div style="
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:10px;
+    box-sizing:border-box;
+  ">
+    <h2 style="margin-top:0;">Beschrijving van de site</h2>
 
-      <p style="text-align: justify;">
-        De combinatie van natuurlijke rotsformaties en aangelegde elementen zoals trappen en paden illustreert hoe infrastructuur op kleinschalige wijze wordt geïntegreerd in een moeilijk toegankelijk terrein. Dergelijke routes hebben vaak zowel een praktische als een symbolische functie, waarbij de fysieke toegang tot de kapel gepaard gaat met een zekere beleving van het landschap.
-      </p>
+    <p style="text-align: justify;">
+      Deze site toont de toegangsroute naar een kleine kapel, gelegen op een rotsachtige uitloper langs de kust nabij Asini. De route bestaat uit een smal pad en een reeks trappen die zich aanpassen aan het natuurlijke reliëf van het terrein. Door de ligging op een steile helling vormt de route een duidelijke verbinding tussen het hoger gelegen landschap en de kapel aan zee.
+    </p>
 
-      <p style="text-align: justify;">
-        De ligging langs de kust zorgt voor sterke visuele relaties met de zee en de omliggende rotsformaties. Hierdoor vormt de route niet alleen een functioneel traject, maar ook een belangrijk onderdeel van de ruimtelijke en landschappelijke ervaring van de site.
-      </p>
+    <p style="text-align: justify;">
+      De combinatie van natuurlijke rotsformaties en aangelegde elementen zoals trappen en paden illustreert hoe infrastructuur op kleinschalige wijze wordt geïntegreerd in een moeilijk toegankelijk terrein. Dergelijke routes hebben vaak zowel een praktische als een symbolische functie, waarbij de fysieke toegang tot de kapel gepaard gaat met een zekere beleving van het landschap.
+    </p>
 
-    </div>
+    <p style="text-align: justify;">
+      De ligging langs de kust zorgt voor sterke visuele relaties met de zee en de omliggende rotsformaties. Hierdoor vormt de route niet alleen een functioneel traject, maar ook een belangrijk onderdeel van de ruimtelijke en landschappelijke ervaring van de site.
+    </p>
+  </div>
+
+  <!-- GAME CARD -->
+  <div style="
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:10px;
+    box-sizing:border-box;
+  ">
+    <h2 style="margin-top:0;">Kapel Run</h2>
+
+    <img 
+      src="./fotos/kapelrun_preview.png" 
+      alt="Preview van Kapel Run"
+      style="
+        width:100%;
+        max-height:600px;
+        object-fit:cover;
+        border-radius:8px;
+        display:block;
+        margin-bottom:15px;
+      "
+    >
+
+    <p style="margin-top:0; text-align:justify;">
+      Kapel Run is een korte Unity-game gebaseerd op dit fotogrammetriemodel. 
+      Je volgt het pad naar de kapel terwijl vallende rotsen je proberen tegen te houden. 
+      Onderweg kan je sprinten, obstakels ontwijken en de finish bereiken.
+    </p>
+    <p style="margin-top:0; text-align:justify;">
+      Kapel Run is allesbehalve een ingewikkeld spel, maar wel een enorm leuk experiment voor het visualiseren van een model door er in rond te kunnen wandelen.
+    </p>
+
+    <a href="https://mrsh0tgun.itch.io/kapel-run" target="_blank" style="text-decoration:none;">
+      <button style="
+        padding:12px 18px;
+        background:rgb(159,51,54);
+        color:white;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:15px;
+      ">
+        Download Kapel Run
+      </button>
+    </a>
+  </div>
+
+</div>
 
     <!-- RECHTER KOLOM -->
     <div style="
@@ -135,6 +189,7 @@
     <div>CloudCompare</div>
     <div>Blender 5.1</div>
     <div>Unity</div>
+    <div>Itch.io</div>
   </div>
 </div>
     </div>
